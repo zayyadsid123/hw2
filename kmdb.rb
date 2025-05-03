@@ -103,7 +103,7 @@ Role.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 new_studio = Studio.new
-p new_studio
+#p new_studio
 
 #Insert studio data
 new_studio["name"]="Warner Bros."
@@ -111,7 +111,7 @@ new_studio.save
 #p new_studio
 
 warner_bros= Studio.find_by({"name"=>"Warner Bros."})
-p warner_bros
+#p warner_bros
 
 # Insert movie data
 new_movie=Movie.new
@@ -139,34 +139,35 @@ new_movie.save
 #p new_movie
 
 batman_begins_movie=Movie.find_by({"title"=>"Batman Begins"})
-p batman_begins_movie
+#p batman_begins_movie
 
 the_dark_knight_movie=Movie.find_by({"title"=>"The Dark Knight"})
-p batman_begins_movie
+#p the_dark_knight_movie
 
 the_dark_knight_rises_movie=Movie.find_by({"title"=>"The Dark Knight Rises"})
-p batman_begins_movie
+#p the_dark_knight_rises_movie
 
 #Batman Begins
 #Insert actor data
 new_actor=Actor.new
 new_actor["name"]="Christian Bale"
 new_actor.save
-p new_actor
+#p new_actor
 
 christian_bale_actor=Actor.find_by({"name"=>"Christian Bale"})
+#p christian_bale_actor
 
 new_actor=Actor.new
 new_actor["name"]="Michael Caine"
 new_actor.save
-p new_actor
+#p new_actor
 
 michael_caine_actor=Actor.find_by({"name"=>"Michael Caine"})
 
 new_actor=Actor.new
 new_actor["name"]="Liam Neeson"
 new_actor.save
-p new_actor
+#p new_actor
 
 liam_neeson_actor=Actor.find_by({"name"=>"Liam Neeson"})
 
@@ -174,14 +175,14 @@ liam_neeson_actor=Actor.find_by({"name"=>"Liam Neeson"})
 new_actor=Actor.new
 new_actor["name"]="Katie Holmes"
 new_actor.save
-p new_actor
+#p new_actor
 
 katie_holmes_actor=Actor.find_by({"name"=>"Katie Holmes"})
 
 new_actor=Actor.new
 new_actor["name"]="Gary Oldman"
 new_actor.save
-p new_actor
+#p new_actor
 
 gary_oldman_actor=Actor.find_by({"name"=>"Gary Oldman"})
 
@@ -192,35 +193,35 @@ new_role["movie_id"]=batman_begins_movie["id"]
 new_role["actor_id"]=christian_bale_actor["id"]
 new_role["character_name"]="Bruce Wayne"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=batman_begins_movie["id"]
 new_role["actor_id"]=michael_caine_actor["id"]
 new_role["character_name"]="Alfred"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=batman_begins_movie["id"]
 new_role["actor_id"]=liam_neeson_actor["id"]
 new_role["character_name"]="Ra's Al Ghul"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=batman_begins_movie["id"]
 new_role["actor_id"]=katie_holmes_actor["id"]
 new_role["character_name"]="Rachel Dawes"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=batman_begins_movie["id"]
 new_role["actor_id"]=gary_oldman_actor["id"]
 new_role["character_name"]="Commissioner Gordon"
 new_role.save
-p new_role
+#p new_role
 
 #The Dark Knight 
 #Insert Actor Data
@@ -229,21 +230,21 @@ p new_role
 new_actor=Actor.new
 new_actor["name"]="Heath Ledger"
 new_actor.save
-p new_actor
+#p new_actor
 
 heath_ledger_actor=Actor.find_by({"name"=>"Heath Ledger"})
 
 new_actor=Actor.new
 new_actor["name"]="Aaron Eckhart"
 new_actor.save
-p new_actor
+#p new_actor
 
 aaron_eckhart_actor=Actor.find_by({"name"=>"Aaron Eckhart"})
 
 new_actor=Actor.new
 new_actor["name"]="Maggie Gyllenhaal"
 new_actor.save
-p new_actor
+#p new_actor
 
 maggie_gyllenhaal_actor=Actor.find_by({"name"=>"Maggie Gyllenhaal"})
 
@@ -253,35 +254,35 @@ new_role["movie_id"]=the_dark_knight_movie["id"]
 new_role["actor_id"]=christian_bale_actor["id"]
 new_role["character_name"]="Bruce Wayne"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=the_dark_knight_movie["id"]
 new_role["actor_id"]=heath_ledger_actor["id"]
 new_role["character_name"]="Joker"
 new_role.save
-p new_role
+#p new_role
 
 new_role=Role.new
 new_role["movie_id"]=the_dark_knight_movie["id"]
 new_role["actor_id"]=aaron_eckhart_actor["id"]
 new_role["character_name"]="Harvey Dent"
 new_role.save
-p new_role 
+#p new_role 
 
 new_role=Role.new
 new_role["movie_id"]=the_dark_knight_movie["id"]
 new_role["actor_id"]=michael_caine_actor["id"]
 new_role["character_name"]="Alfred"
 new_role.save
-p new_role 
+#p new_role 
 
 new_role=Role.new
 new_role["movie_id"]=the_dark_knight_movie["id"]
 new_role["actor_id"]=maggie_gyllenhaal_actor["id"]
 new_role["character_name"]="Rachel Dawes"
 new_role.save
-p new_role 
+#p new_role 
 
 #The Dark Knight Rises 
 #Insert Actor Data
@@ -290,21 +291,21 @@ p new_role
 new_actor=Actor.new
 new_actor["name"]="Tom Hardy"
 new_actor.save
-p new_actor
+#p new_actor
 
 tom_hardy_actor=Actor.find_by({"name"=>"Tom Hardy"})
 
 new_actor=Actor.new
 new_actor["name"]="Joseph Gordon-Levitt"
 new_actor.save
-p new_actor
+#p new_actor
 
 joseph_gordon_levitt_actor=Actor.find_by({"name"=>"Joseph Gordon-Levitt"})
 
 new_actor=Actor.new
 new_actor["name"]="Anne Hathaway"
 new_actor.save
-p new_actor
+#p new_actor
 
 anne_hathaway_actor=Actor.find_by({"name"=>"Anne Hathaway"}) 
 
@@ -315,14 +316,14 @@ new_role["movie_id"]=the_dark_knight_rises_movie["id"]
 new_role["actor_id"]=christian_bale_actor["id"]
 new_role["character_name"]="Bruce Wayne"
 new_role.save
-p new_role 
+#p new_role 
 
 new_role=Role.new
 new_role["movie_id"]=the_dark_knight_rises_movie["id"]
 new_role["actor_id"]=gary_oldman_actor["id"]
 new_role["character_name"]="Commissioner Gordon"
 new_role.save
-p new_role 
+#p new_role 
 
 
 new_role=Role.new
@@ -330,7 +331,7 @@ new_role["movie_id"]=the_dark_knight_rises_movie["id"]
 new_role["actor_id"]=tom_hardy_actor["id"]
 new_role["character_name"]="Bane"
 new_role.save
-p new_role 
+#p new_role 
 
 
 new_role=Role.new
@@ -338,7 +339,7 @@ new_role["movie_id"]=the_dark_knight_rises_movie["id"]
 new_role["actor_id"]=joseph_gordon_levitt_actor["id"]
 new_role["character_name"]="John Blake"
 new_role.save
-p new_role 
+#p new_role 
 
 
 new_role=Role.new
@@ -346,7 +347,7 @@ new_role["movie_id"]=the_dark_knight_rises_movie["id"]
 new_role["actor_id"]=anne_hathaway_actor["id"]
 new_role["character_name"]="Selina Kyle"
 new_role.save
-p new_role 
+#p new_role 
 
 
 
