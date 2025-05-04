@@ -362,7 +362,8 @@ puts ""
 
 for movie in Movie.all
     studio=Studio.find_by({"id"=>movie["studio_id"]})
-    p "#{movie["title"]} #{movie["year_released"]} #{movie["rated"]} #{studio["name"]}"
+    puts "#{movie["title"]} #{movie["year_released"]} #{movie["rated"]} #{studio["name"]}"
+
 end
 
 
@@ -379,6 +380,7 @@ puts ""
 for role in Role.all
     movie=Movie.find_by({"id"=>role["movie_id"]})
     actor=Actor.find_by({"id"=>role["actor_id"]})
-    p "#{movie["title"]} #{actor["name"]} #{role["character_name"]}"
+    puts "#{movie["title"]} #{actor["name"]} #{role["character_name"]}"
+
 end
 
